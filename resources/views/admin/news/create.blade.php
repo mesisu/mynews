@@ -1,16 +1,16 @@
-{{-- layouts/profile.blade.phpを読み込む --}}
-@extends('layouts.profile')
+{{-- layouts/admin.blade.phpを読み込む --}}
+@extends('layouts.admin')
 
 
-{{-- profile.blade.phpの@yield('title')に'プロフィール'を埋め込む --}}
-@section('title', 'プロフィールページ')
+{{-- admin.blade.phpの@yield('title')に'ニュースの新規作成'を埋め込む --}}
+@section('title', 'ニュースの新規作成')
 
-{{-- profile.blade.phpの@yield('content')に以下のタグを埋め込む --}}
+{{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>プロフィール新規作成</h2>
+                <h2>ニュース新規作成</h2>
             </div>
         </div>
     </div>
