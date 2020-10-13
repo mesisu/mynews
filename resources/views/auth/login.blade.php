@@ -33,7 +33,7 @@
 
                                     @if ($errors->has('password'))
                                         <span class="invalid-feedback">
-                                            <strong>{{ $errors->first('messages.password') }}</strong>
+                                            <strong>{{ $errors->first('password') }}</strong>
                                         </span>
                                     @endif
                                 </div>
