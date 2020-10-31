@@ -14,4 +14,11 @@ class Profile extends Model
       'hobby' => 'required',
       'introduction' => 'required',
       );
+    // 以下を追記課題17
+    // Newsモデルに関連付けを行う
+    public function histories()
+    {
+      return $this->hasMany('App\History2'); //History2のテーブルをすべて取得
+
+    }
 }
