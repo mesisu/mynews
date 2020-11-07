@@ -16,7 +16,7 @@ class Profile extends Model
       );
     // 以下を追記課題17
     // Newsモデルに関連付けを行う
-    public function histories()
+    public function profile_histories()
     {
       return $this->hasMany('App\ProfileHistory'); //モデルのテーブルをすべて取得
 

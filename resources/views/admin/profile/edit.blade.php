@@ -37,6 +37,7 @@
                         <div class="col-md-10">
                             <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
                         </div>
+                    </div>
                     <div class="form-group row">
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $profile_form->id }}">
@@ -51,7 +52,7 @@
                         <h2>編集履歴</h2>
                         <ul class="list-group">
                             @if ($profile_form->profile_histories != NULL)
-                                @foreach ($profile_form->profile_histories as $history) 　　//テーブルにあわせる
+                                @foreach ($profile_form->profile_histories as $history) 　　
                                     <li class="list-group-item">{{ $history->edited_at }}</li>
                                 @endforeach
                             @endif
@@ -62,6 +63,3 @@
         </div>
     </div>
 @endsection
-
-//ProfileHistory
-//profile_histories
